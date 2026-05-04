@@ -112,12 +112,81 @@ ul, ol {
     font-size: 18px;
   }
 }
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(10,10,10,0.7);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  z-index: 1000;
+}
 
+.nav {
+  max-width: 1150px;
+  margin: auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.menu {
+  display: none;
+  gap: 24px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgba(255,255,255,0.7);
+  font-size: 14px;
+}
+
+.menu a:hover {
+  color: #fff;
+}
+
+.nav-cta .button.small {
+  padding: 10px 16px;
+  font-size: 14px;
+}
+
+@media(min-width:768px){
+  .menu {
+    display: flex;
+  }
+}
+  body {
+  padding-top: 80px;
+}
 </style>
 </head>
 
 <body>
+<header class="header">
+  <div class="nav">
 
+    <div class="logo">
+      WEPIC
+    </div>
+
+    <div class="menu">
+      <a href="#publicos">Públicos</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#diferenciais">Diferenciais</a>
+    </div>
+
+    <div class="nav-cta">
+      <a href="#publicos" class="button small">Conhecer planos</a>
+    </div>
+
+  </div>
+</header>
 <div class="container">
 
 <!-- HERO -->
