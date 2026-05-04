@@ -19,33 +19,32 @@ body {
   padding: 40px 20px;
 }
 
-.hero {
-  padding: 80px 20px;
+.section {
+  margin-top: 80px;
 }
 
-.hero h1 {
+.hero {
+  padding: 80px 0;
+}
+
+h1 {
   font-size: 42px;
   line-height: 1.2;
 }
 
-.hero p {
-  opacity: 0.7;
-  margin-top: 20px;
+p {
+  opacity: 0.75;
 }
 
 .button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 22px;
   background: #fff;
   color: #000;
-  padding: 14px 22px;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
-  display: inline-block;
-  margin-top: 20px;
-}
-
-.section {
-  margin-top: 80px;
 }
 
 .grid {
@@ -55,12 +54,8 @@ body {
 
 .card {
   background: #111;
-  padding: 20px;
+  padding: 24px;
   border-radius: 12px;
-}
-
-ul {
-  padding-left: 20px;
 }
 
 .plans {
@@ -74,10 +69,14 @@ ul {
   border-radius: 12px;
 }
 
+ul, ol {
+  padding-left: 20px;
+}
+
 .footer {
   margin-top: 80px;
-  text-align: center;
   opacity: 0.5;
+  text-align: center;
 }
 
 @media(min-width:768px){
@@ -86,35 +85,43 @@ ul {
   }
 
   .plans {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .hero h1 {
+  h1 {
     font-size: 56px;
   }
 }
 </style>
-
 </head>
 
 <body>
 
 <div class="container">
 
+<!-- HERO -->
 <div class="hero">
+
 <p>Você chegou ao lugar certo. Aqui o lucro é todo seu, e a tecnologia trabalha para você.</p>
 
 <h1>Você fotografa. A WEPIC encontra, organiza e vende, e o lucro é todo seu.</h1>
 
 <p>
 Chega de comissão, trabalho manual e cliente perguntando “cadê minha foto?”.
+</p>
+
+<p>
 Você faz o upload, compartilha o QR Code ou link e a plataforma faz o resto.
 </p>
 
 <a href="#planos" class="button">Conhecer os planos</a>
+<a href="#como-funciona" class="button">Ver como funciona</a>
+
 </div>
 
+<!-- ANTES VS DEPOIS -->
 <div class="section">
+
 <h2>No concorrente, você trabalha mais e ganha menos.</h2>
 
 <div class="grid">
@@ -143,9 +150,12 @@ Você faz o upload, compartilha o QR Code ou link e a plataforma faz o resto.
 </div>
 
 </div>
+
 </div>
 
-<div class="section">
+<!-- COMO FUNCIONA -->
+<div class="section" id="como-funciona">
+
 <h2>Você não muda seu trabalho. Só para de perder tempo e dinheiro.</h2>
 
 <ol>
@@ -159,10 +169,15 @@ Você faz o upload, compartilha o QR Code ou link e a plataforma faz o resto.
 </ol>
 
 <p>Sem envio manual. Sem organização. Sem comissão nos planos pagos.</p>
+
 </div>
 
+<!-- POR QUE VENDE MAIS -->
 <div class="section">
+
 <h2>Não é sobre plataforma. É sobre comportamento.</h2>
+
+<p>Na WEPIC:</p>
 
 <ul>
 <li>o cliente encontra a própria foto sozinho</li>
@@ -171,16 +186,22 @@ Você faz o upload, compartilha o QR Code ou link e a plataforma faz o resto.
 <li>ele compra no momento certo</li>
 </ul>
 
-<p>
-Isso aumenta taxa de descoberta, tempo dentro do evento, conversão e ticket médio.
-</p>
+<p>Isso aumenta:</p>
 
-<p>
-Enquanto outras plataformas dependem de você, a WEPIC funciona mesmo sem você.
-</p>
+<ul>
+<li>taxa de descoberta</li>
+<li>tempo dentro do evento</li>
+<li>conversão</li>
+<li>ticket médio</li>
+</ul>
+
+<p>Enquanto outras plataformas dependem de você, a WEPIC funciona mesmo sem você.</p>
+
 </div>
 
+<!-- GANHOS -->
 <div class="section">
+
 <h2>Você para de operar. E passa a escalar.</h2>
 
 <ul>
@@ -193,14 +214,17 @@ Enquanto outras plataformas dependem de você, a WEPIC funciona mesmo sem você.
 </ul>
 
 <p>Você volta a ser fotógrafo, não operador.</p>
+
 </div>
 
+<!-- TECNOLOGIA -->
 <div class="section">
+
 <h2>Tecnologia que faz isso funcionar</h2>
 
 <ul>
 <li>Reconhecimento facial biométrico</li>
-<li>OCR com busca por texto em imagem</li>
+<li>OCR, com busca por texto em imagem, número, crachá, camiseta e placa</li>
 <li>Busca instantânea em milhares de fotos</li>
 <li>Hierarquia de equipe</li>
 <li>Split de pagamento automático</li>
@@ -208,9 +232,12 @@ Enquanto outras plataformas dependem de você, a WEPIC funciona mesmo sem você.
 </ul>
 
 <p>Evento é ao vivo. A tecnologia precisa funcionar na hora.</p>
+
 </div>
 
+<!-- PLANOS -->
 <div class="section" id="planos">
+
 <h2>Planos</h2>
 
 <div class="plans">
@@ -218,32 +245,59 @@ Enquanto outras plataformas dependem de você, a WEPIC funciona mesmo sem você.
 <div class="plan">
 <h3>Sem Risco</h3>
 <p>R$0/mês</p>
+<p>Uploads: ilimitado</p>
 <p>Comissão: 10%</p>
+<p>Por upload: R$0,045</p>
+<p>Admins: 1</p>
 </div>
 
 <div class="plan">
 <h3>Start</h3>
 <p>R$169/mês</p>
+<p>Uploads/ano: 20.000</p>
 <p>Comissão: 0%</p>
+<p>Admins: 3</p>
+<p>Servidor: 18 meses</p>
 </div>
 
 <div class="plan">
 <h3>Scale</h3>
 <p>R$490/mês</p>
+<p>Uploads/ano: 60.000</p>
 <p>Comissão: 0%</p>
+<p>Admins: 10</p>
+<p>Servidor: 18 meses</p>
 </div>
 
 <div class="plan">
 <h3>Enterprise</h3>
 <p>R$819/mês</p>
+<p>Uploads/ano: 100.000</p>
 <p>Comissão: 0%</p>
+<p>Admins: 30</p>
+<p>Servidor: 18 meses</p>
+</div>
+
+<div class="plan">
+<h3>PRO 1 Evento</h3>
+<p>R$499</p>
+<p>Pagamento único</p>
+<p>Uploads: 10.000</p>
+<p>Comissão: 0%</p>
+<p>Admins: 3</p>
+<p>Validade: 6 meses</p>
 </div>
 
 </div>
+
 </div>
 
+<!-- MIGRAÇÃO -->
 <div class="section">
+
 <h2>Já usa outra plataforma?</h2>
+
+<p>Você não precisa mudar seu jeito de trabalhar. Só precisa parar de perder venda.</p>
 
 <ul>
 <li>Suba um evento teste</li>
@@ -253,23 +307,40 @@ Enquanto outras plataformas dependem de você, a WEPIC funciona mesmo sem você.
 </ul>
 
 <p>A diferença aparece no primeiro evento.</p>
+
 </div>
 
-<div class="section">
+<!-- FAQ -->
+<div class="section" id="faq">
+
 <h2>FAQ</h2>
 
-<p><strong>Qual a diferença entre gratuito e pago?</strong><br>
-Os planos pagos eliminam comissão e aumentam sua escala.</p>
+<p><strong>Qual a diferença entre o plano gratuito e os planos pagos?</strong><br>
+O plano gratuito valida o modelo. Os planos pagos eliminam comissão e aumentam sua escala.</p>
 
-<p><strong>E se acabar upload?</strong><br>
+<p><strong>E se minha cota de uploads acabar?</strong><br>
 Você pode expandir sem perder o evento.</p>
 
-<p><strong>Posso migrar?</strong><br>
-Sim, e testar sem risco.</p>
+<p><strong>Por quanto tempo as fotos ficam disponíveis?</strong><br>
+Conforme o plano contratado, com opção de extensão.</p>
+
+<p><strong>Posso migrar de outra plataforma?</strong><br>
+Sim. E você pode testar sem risco.</p>
+
+</div>
+
+<!-- CTA FINAL -->
+<div class="section">
+
+<h2>No concorrente você trabalha mais e ganha menos.</h2>
+
+<p>Na WEPIC você fotografa, e a plataforma vende.</p>
+
+<a href="#planos" class="button">Conhecer os planos</a>
+
 </div>
 
 <div class="footer">
-<p>Na WEPIC você fotografa, e a plataforma vende.</p>
 <a href="index.html" style="color:white;">Voltar</a>
 </div>
 
