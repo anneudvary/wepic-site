@@ -1,19 +1,167 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>WEPIC</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WEPIC</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #0A0A0A;
+  color: #fff;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.hero p {
+  opacity: 0.7;
+  margin-top: 20px;
+}
+
+.cta {
+  margin-top: 30px;
+}
+
+.button {
+  background: #fff;
+  color: #000;
+  padding: 14px 22px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.section {
+  margin-top: 80px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.card {
+  background: #111;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card a {
+  color: #fff;
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.footer {
+  text-align: center;
+  opacity: 0.5;
+  margin-top: 80px;
+  padding-bottom: 40px;
+}
+
+@media(min-width:768px){
+  .hero h1 {
+    font-size: 52px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+</style>
+
 </head>
 
 <body>
 
-<h1>WEPIC</h1>
+<div class="container">
 
-<p>A WEPIC transforma cada foto do seu evento em lead, venda e memória.</p>
+  <div class="hero">
+    <h1>
+      A WEPIC transforma cada foto do seu evento em lead, venda e memória.
+    </h1>
 
-<a href="fotografo.html">Sou fotógrafo</a><br>
-<a href="empresa.html">Tenho um evento</a><br>
-<a href="escola.html">Fotografia escolar</a>
+    <p>
+      IA que reconhece rosto e texto, QR Code, venda automática e dados reais de quem esteve no evento.
+    </p>
+
+    <div class="cta">
+      <a class="button" href="fotografo.html">Conhecer planos</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Escolha seu cenário</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Sou fotógrafo</h3>
+        <p>Você fotografa. A WEPIC encontra, organiza e vende.</p>
+        <a href="fotografo.html">Entrar</a>
+      </div>
+
+      <div class="card">
+        <h3>Tenho um evento</h3>
+        <p>Cada convidado vira um lead com dado real.</p>
+        <a href="empresa.html">Entrar</a>
+      </div>
+
+      <div class="card">
+        <h3>Fotografia escolar</h3>
+        <p>Pais encontram, compram e recebem.</p>
+        <a href="escola.html">Entrar</a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Como funciona</h2>
+    <p>
+      Crie o evento, suba as fotos e compartilhe um QR Code.
+      Em segundos, cada pessoa encontra suas fotos.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Diferenciais</h2>
+    <ul>
+      <li>Reconhecimento facial biométrico</li>
+      <li>Busca por texto com OCR</li>
+      <li>Venda automática</li>
+      <li>Relatórios de leads</li>
+      <li>Split de pagamento</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    WEPIC © 2026
+  </div>
+
+</div>
 
 </body>
 </html>
