@@ -6,56 +6,86 @@
 <title>WEPIC</title>
 
 <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #0A0A0A;
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at top, #111 0%, #0A0A0A 60%);
   color: #fff;
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1150px;
   margin: auto;
-  padding: 40px 20px;
+  padding: 60px 24px;
 }
 
 .section {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 .hero {
-  padding: 80px 0;
+  padding: 120px 0 80px;
 }
 
 h1 {
-  font-size: 42px;
-  line-height: 1.2;
+  font-size: 56px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
 }
 
 p {
-  opacity: 0.75;
+  opacity: 0.65;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 700px;
 }
 
 .button {
   display: inline-block;
-  margin-top: 20px;
-  padding: 14px 22px;
+  margin-top: 24px;
+  padding: 14px 24px;
   background: #fff;
   color: #000;
   text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(255,255,255,0.15);
 }
 
 .grid {
   display: grid;
-  gap: 20px;
+  gap: 24px;
 }
 
 .card {
-  background: #111;
-  padding: 24px;
-  border-radius: 12px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 28px;
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255,255,255,0.2);
 }
 
 ul, ol {
@@ -63,9 +93,10 @@ ul, ol {
 }
 
 .footer {
-  margin-top: 80px;
-  opacity: 0.5;
+  margin-top: 120px;
+  opacity: 0.4;
   text-align: center;
+  font-size: 14px;
 }
 
 @media(min-width:768px){
@@ -74,9 +105,14 @@ ul, ol {
   }
 
   h1 {
-    font-size: 56px;
+    font-size: 68px;
+  }
+
+  p {
+    font-size: 18px;
   }
 }
+
 </style>
 </head>
 
