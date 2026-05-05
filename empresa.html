@@ -140,51 +140,61 @@ ul, ol {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 420px;
-  position: relative;
+  padding: 28px;
+  min-height: 480px;
 }
 
 .plano h3 {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .preco {
-  font-size: 30px;
-  font-weight: bold;
-  margin: 10px 0 20px;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 12px 0 24px;
 }
 
 .plano p {
-  margin: 4px 0;
+  margin: 6px 0;
+  opacity: 0.8;
 }
 
 .plano-btn {
-  margin-top: 20px;
+  margin-top: 30px;
   width: 100%;
   text-align: center;
 }
 
 .destaque {
   border: 1px solid #fff;
-  transform: scale(1.03);
+  transform: scale(1.04);
 }
 
 .tag {
   position: absolute;
-  top: -12px;
+  top: -14px;
   left: 20px;
   background: #fff;
   color: #000;
   font-size: 12px;
-  padding: 4px 10px;
+  padding: 5px 10px;
   border-radius: 6px;
-  font-weight: bold;
+  font-weight: 600;
+}
+  .faq-collapse {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 16px 0;
 }
 
-@media(min-width:768px){
-  .planos-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.faq-collapse summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.faq-collapse p {
+  margin-top: 10px;
+  opacity: 0.7;
 }
 </style>
 </head>
@@ -352,28 +362,48 @@ ul, ol {
 
 <h2>FAQ</h2>
 
-<p><strong>A plataforma funciona em eventos fechados?</strong><br>
-Sim. Você controla quem acessa o evento, quem pode ver as fotos e quais permissões cada equipe possui. O acesso pode ser restrito por link, QR Code e autenticação.</p>
+<!-- ABERTAS -->
 
-<p><strong>Os dados dos convidados ficam protegidos?</strong><br>
-Sim. O acesso acontece com consentimento do usuário, seguindo LGPD. Cada evento tem controle próprio de acesso e os dados são visíveis apenas para quem deve ver.</p>
-
-<p><strong>Funciona para eventos grandes?</strong><br>
-Sim. A WEPIC foi construída para alto volume de fotos e acessos simultâneos. Funciona em eventos com grande fluxo sem comprometer a experiência.</p>
-
-<p><strong>Como a marca usa os dados depois?</strong><br>
-A plataforma entrega relatórios com presença, buscas, leads e comportamento dentro do evento. Isso permite ativação pós-evento com base real, não estimativa.</p>
-
-<p><strong>A WEPIC substitui uma galeria?</strong><br>
-Sim. E vai além. Você não só entrega fotos, como transforma cada interação em dado e inteligência para o negócio.</p>
-
-<p><strong>O convidado precisa baixar aplicativo?</strong><br>
-Não necessariamente. Ele pode acessar via link ou QR Code, direto no navegador, com experiência rápida e sem fricção.</p>
-
-<p><strong>É possível usar em múltiplos eventos ao mesmo tempo?</strong><br>
-Sim. A plataforma suporta operação simultânea com múltiplos eventos, equipes e níveis de acesso.</p>
-
+<div class="faq-item">
+<strong>A plataforma funciona em eventos fechados?</strong>
+<p>Sim. Você controla quem acessa o evento, quem pode ver as fotos e quais permissões cada equipe possui.</p>
 </div>
 
+<div class="faq-item">
+<strong>Os dados dos convidados ficam protegidos?</strong>
+<p>Sim. O acesso acontece com consentimento e controle por evento, seguindo LGPD.</p>
+</div>
+
+<!-- COLAPSADAS -->
+
+<details class="faq-collapse">
+<summary>Funciona para eventos grandes?</summary>
+<p>Sim. A WEPIC suporta alto volume de fotos e acessos simultâneos sem comprometer a experiência.</p>
+</details>
+
+<details class="faq-collapse">
+<summary>Como a marca usa os dados depois?</summary>
+<p>Relatórios com presença, buscas e comportamento permitem ativação pós-evento com base real.</p>
+</details>
+
+<details class="faq-collapse">
+<summary>A WEPIC substitui uma galeria?</summary>
+<p>Sim. E vai além. Cada interação vira dado e inteligência.</p>
+</details>
+
+<details class="faq-collapse">
+<summary>O convidado precisa baixar aplicativo?</summary>
+<p>Não. Pode acessar via link ou QR Code direto no navegador.</p>
+</details>
+
+<details class="faq-collapse">
+<summary>É possível usar múltiplos eventos ao mesmo tempo?</summary>
+<p>Sim. A plataforma suporta operação simultânea com equipes e níveis de acesso.</p>
+</details>
+
+</div>
+  </div>
+  </div>
+  </div>
 </body>
 </html>
