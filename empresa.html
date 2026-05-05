@@ -132,7 +132,48 @@ ul, ol {
     font-size: 56px;
   }
 }
+.planos-grid {
+  grid-template-columns: repeat(1, 1fr);
+}
 
+.plano {
+  position: relative;
+}
+
+.preco {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.plano-btn {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.destaque {
+  border: 1px solid #fff;
+  transform: scale(1.03);
+}
+
+.tag {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  background: #fff;
+  color: #000;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+@media(min-width:768px){
+  .planos-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 </style>
 </head>
 
@@ -237,23 +278,63 @@ ul, ol {
 
 <h2>Planos</h2>
 
-<div class="grid">
+<div class="section" id="planos">
 
-<div class="card">
+<h2>Planos</h2>
+
+<div class="grid planos-grid">
+
+<div class="card plano">
+
 <h3>Economia Scale</h3>
-<p>R$490/mês</p>
+<p class="preco">R$490/mês</p>
+
+<p>Uploads/ano: 60.000</p>
+<p>Comissão: 0%</p>
+<p>Admins: 10</p>
+<p>Logs de auditoria: sim</p>
+<p>SLA garantido: sim</p>
+<p>Suporte dedicado: sim</p>
+
+<a href="#" class="button plano-btn">Escolher Scale</a>
+
 </div>
 
-<div class="card">
+<div class="card plano destaque">
+
+<div class="tag">Mais usado</div>
+
 <h3>Economia Enterprise</h3>
-<p>R$819/mês</p>
+<p class="preco">R$819/mês</p>
+
+<p>Uploads/ano: 100.000</p>
+<p>Comissão: 0%</p>
+<p>Admins: 30</p>
+<p>Logs de auditoria: completo</p>
+<p>SLA garantido: sim</p>
+<p>Suporte dedicado: prioritário</p>
+
+<a href="#" class="button plano-btn">Escolher Enterprise</a>
+
 </div>
 
-<div class="card">
+<div class="card plano">
+
 <h3>Plano Personalizado</h3>
-<p>Sob consulta</p>
+<p class="preco">Sob consulta</p>
+
+<p>Volume e operação específica</p>
+<p>Multi-equipe: sim</p>
+<p>Multi-evento: sim</p>
+<p>Integração assistida: sim</p>
+
+<a href="#" class="button plano-btn">Falar com time</a>
+
 </div>
 
+</div>
+
+</div>
 </div>
 
 </div>
