@@ -137,13 +137,25 @@ ul, ol {
 }
 
 .plano {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 420px;
   position: relative;
 }
 
+.plano h3 {
+  margin-bottom: 10px;
+}
+
 .preco {
-  font-size: 28px;
+  font-size: 30px;
   font-weight: bold;
-  margin: 10px 0;
+  margin: 10px 0 20px;
+}
+
+.plano p {
+  margin: 4px 0;
 }
 
 .plano-btn {
@@ -159,12 +171,12 @@ ul, ol {
 
 .tag {
   position: absolute;
-  top: -10px;
+  top: -12px;
   left: 20px;
   background: #fff;
   color: #000;
   font-size: 12px;
-  padding: 4px 8px;
+  padding: 4px 10px;
   border-radius: 6px;
   font-weight: bold;
 }
@@ -278,10 +290,6 @@ ul, ol {
 
 <h2>Planos</h2>
 
-<div class="section" id="planos">
-
-<h2>Planos</h2>
-
 <div class="grid planos-grid">
 
 <div class="card plano">
@@ -344,15 +352,26 @@ ul, ol {
 
 <h2>FAQ</h2>
 
-<p><strong>A plataforma funciona em eventos fechados?</strong><br>Sim.</p>
+<p><strong>A plataforma funciona em eventos fechados?</strong><br>
+Sim. Você controla quem acessa o evento, quem pode ver as fotos e quais permissões cada equipe possui. O acesso pode ser restrito por link, QR Code e autenticação.</p>
 
-<p><strong>Os dados ficam protegidos?</strong><br>Sim.</p>
+<p><strong>Os dados dos convidados ficam protegidos?</strong><br>
+Sim. O acesso acontece com consentimento do usuário, seguindo LGPD. Cada evento tem controle próprio de acesso e os dados são visíveis apenas para quem deve ver.</p>
 
-</div>
+<p><strong>Funciona para eventos grandes?</strong><br>
+Sim. A WEPIC foi construída para alto volume de fotos e acessos simultâneos. Funciona em eventos com grande fluxo sem comprometer a experiência.</p>
 
-<div class="footer">
-<a href="index.html" style="color:white;">Voltar</a>
-</div>
+<p><strong>Como a marca usa os dados depois?</strong><br>
+A plataforma entrega relatórios com presença, buscas, leads e comportamento dentro do evento. Isso permite ativação pós-evento com base real, não estimativa.</p>
+
+<p><strong>A WEPIC substitui uma galeria?</strong><br>
+Sim. E vai além. Você não só entrega fotos, como transforma cada interação em dado e inteligência para o negócio.</p>
+
+<p><strong>O convidado precisa baixar aplicativo?</strong><br>
+Não necessariamente. Ele pode acessar via link ou QR Code, direto no navegador, com experiência rápida e sem fricção.</p>
+
+<p><strong>É possível usar em múltiplos eventos ao mesmo tempo?</strong><br>
+Sim. A plataforma suporta operação simultânea com múltiplos eventos, equipes e níveis de acesso.</p>
 
 </div>
 
