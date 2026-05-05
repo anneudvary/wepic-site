@@ -6,11 +6,17 @@
 <title>Empresa - WEPIC</title>
 
 <style>
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   background: #0A0A0A;
   color: #fff;
+  padding-top: 80px;
+}
+
+html {
+  scroll-padding-top: 120px;
 }
 
 .container {
@@ -68,19 +74,90 @@ ul, ol {
   text-align: center;
 }
 
+/* HEADER */
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(10,10,10,0.7);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  z-index: 1000;
+}
+
+.nav {
+  max-width: 1150px;
+  margin: auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 700;
+}
+
+.menu {
+  display: none;
+  gap: 24px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgba(255,255,255,0.7);
+  font-size: 14px;
+}
+
+.menu a:hover {
+  color: #fff;
+}
+
+.nav-cta .button.small {
+  padding: 10px 16px;
+  font-size: 14px;
+}
+
 @media(min-width:768px){
   .grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu {
+    display: flex;
   }
 
   h1 {
     font-size: 56px;
   }
 }
+
 </style>
 </head>
 
 <body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="nav">
+
+    <div class="logo">
+      <a href="index.html" style="text-decoration:none;color:white;">WEPIC</a>
+    </div>
+
+    <div class="menu">
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#planos">Planos</a>
+      <a href="#faq">FAQ</a>
+    </div>
+
+    <div class="nav-cta">
+      <a href="#planos" class="button small">Ver planos</a>
+    </div>
+
+  </div>
+</header>
 
 <div class="container">
 
@@ -91,15 +168,11 @@ ul, ol {
 
 <h1>Seu evento não é sobre fotos. É sobre dados, relacionamento e resultado.</h1>
 
-<p>
-Hoje você não sabe quem esteve lá, quem importa e o que fazer depois.
-</p>
+<p>Hoje você não sabe quem esteve lá, quem importa e o que fazer depois.</p>
 
-<p>
-Com a WEPIC, cada convidado vira um dado acionável.
-</p>
+<p>Com a WEPIC, cada convidado vira um dado acionável.</p>
 
-<a href="#planos" class="button">Conhecer os planos</a>
+<a href="#planos" class="button">Ver planos</a>
 <a href="#como-funciona" class="button">Ver como funciona</a>
 
 </div>
@@ -159,97 +232,6 @@ Com a WEPIC, cada convidado vira um dado acionável.
 
 </div>
 
-<!-- O QUE VOCÊ PASSA A TER -->
-<div class="section">
-
-<h2>Não é sobre foto. É sobre inteligência.</h2>
-
-<ul>
-<li>Lista real de quem esteve no evento</li>
-<li>Identificação de convidados estratégicos</li>
-<li>Dados de comportamento, busca e interesse</li>
-<li>Histórico por evento</li>
-<li>Base para relacionamento futuro</li>
-</ul>
-
-<p>Você para de imaginar. E passa a saber.</p>
-
-</div>
-
-<!-- IMPACTO -->
-<div class="section">
-
-<h2>Onde isso impacta seu negócio</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Marketing</h3>
-<ul>
-<li>identificar leads reais do evento</li>
-<li>entender interesse por marca, produto ou ação</li>
-<li>ativar pós-evento com precisão</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Relacionamento</h3>
-<ul>
-<li>identificar influenciadores, parceiros e executivos</li>
-<li>entregar conteúdo personalizado</li>
-<li>criar experiência diferenciada</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Gestão</h3>
-<ul>
-<li>entender o que aconteceu de verdade</li>
-<li>medir impacto do evento</li>
-<li>justificar investimento</li>
-</ul>
-</div>
-
-</div>
-
-</div>
-
-<!-- DIFERENCIAL -->
-<div class="section">
-
-<h2>Nenhuma outra plataforma transforma foto em dado como a WEPIC.</h2>
-
-<ul>
-<li>Reconhecimento facial biométrico</li>
-<li>OCR, com leitura de texto em imagem, crachá, número ou marca</li>
-<li>Relatórios de leads e buscas</li>
-<li>Hierarquia de equipe</li>
-<li>Split de pagamento, quando aplicável</li>
-<li>Segurança e autenticação</li>
-</ul>
-
-<p>Você não está contratando uma galeria. Está contratando uma camada de inteligência.</p>
-
-</div>
-
-<!-- ESCALA -->
-<div class="section">
-
-<h2>Pronto para operar em escala</h2>
-
-<ul>
-<li>Multi-evento</li>
-<li>Multi-equipe</li>
-<li>Controle por nível de acesso</li>
-<li>Logs e auditoria</li>
-<li>Infraestrutura pronta para grandes volumes</li>
-<li>Operação simultânea em diferentes eventos</li>
-</ul>
-
-<p>Funciona para um evento. Escala para centenas.</p>
-
-</div>
-
 <!-- PLANOS -->
 <div class="section" id="planos">
 
@@ -260,76 +242,19 @@ Com a WEPIC, cada convidado vira um dado acionável.
 <div class="card">
 <h3>Economia Scale</h3>
 <p>R$490/mês</p>
-<p>Uploads/ano: 60.000</p>
-<p>Comissão: 0%</p>
-<p>Admins: 10</p>
-<p>Logs de auditoria: sim</p>
-<p>SLA garantido: sim</p>
-<p>Suporte dedicado: sim</p>
 </div>
 
 <div class="card">
 <h3>Economia Enterprise</h3>
 <p>R$819/mês</p>
-<p>Uploads/ano: 100.000</p>
-<p>Comissão: 0%</p>
-<p>Admins: 30</p>
-<p>Logs de auditoria: completo</p>
-<p>SLA garantido: sim</p>
-<p>Suporte dedicado: prioritário</p>
 </div>
 
 <div class="card">
 <h3>Plano Personalizado</h3>
 <p>Sob consulta</p>
-<p>Volume e operação específica</p>
-<p>Multi-equipe: sim</p>
-<p>Multi-evento: sim</p>
-<p>Integração assistida: sim</p>
 </div>
 
 </div>
-
-</div>
-
-<!-- SEGURANÇA -->
-<div class="section">
-
-<h2>Dado sem segurança não é ativo. É risco.</h2>
-
-<ul>
-<li>Consentimento explícito do usuário</li>
-<li>Controle de acesso por evento</li>
-<li>Autenticação em duas etapas quando necessário</li>
-<li>Dados acessíveis apenas por quem deve ver</li>
-</ul>
-
-<p>Cada dado coletado é utilizável e protegido.</p>
-
-</div>
-
-<!-- MIGRAÇÃO -->
-<div class="section">
-
-<h2>Já usa outra solução?</h2>
-
-<p>Hoje você tem:</p>
-
-<ul>
-<li>fotos</li>
-<li>talvez uma lista</li>
-<li>pouco ou nenhum dado acionável</li>
-</ul>
-
-<p>Com a WEPIC você passa a ter:</p>
-
-<ul>
-<li>identificação real de público</li>
-<li>comportamento dentro do evento</li>
-<li>base para ativação</li>
-</ul>
-
-<p>Você não troca ferramenta. Você sobe de nível.</p>
 
 </div>
 
@@ -338,29 +263,9 @@ Com a WEPIC, cada convidado vira um dado acionável.
 
 <h2>FAQ</h2>
 
-<p><strong>A plataforma funciona em eventos fechados?</strong><br>
-Sim. Você controla quem acessa, quem vê as fotos e quais permissões cada equipe possui.</p>
+<p><strong>A plataforma funciona em eventos fechados?</strong><br>Sim.</p>
 
-<p><strong>Os dados dos convidados ficam protegidos?</strong><br>
-Sim. O acesso é feito com consentimento, controle por evento e autenticação quando necessário.</p>
-
-<p><strong>Funciona para eventos grandes?</strong><br>
-Sim. A WEPIC foi pensada para alto volume de fotos e acessos simultâneos.</p>
-
-<p><strong>Como a marca usa os dados depois?</strong><br>
-Relatórios de presença, buscas, leads e comportamento.</p>
-
-<p><strong>A WEPIC substitui uma galeria?</strong><br>
-Sim, e entrega muito mais: dados, reconhecimento facial, OCR e inteligência.</p>
-
-</div>
-
-<!-- CTA FINAL -->
-<div class="section">
-
-<h2>Experiência para quem participa. Inteligência para quem contrata.</h2>
-
-<a href="#planos" class="button">Conhecer os planos</a>
+<p><strong>Os dados ficam protegidos?</strong><br>Sim.</p>
 
 </div>
 
